@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Curso Linea Consumo API.props" />
+</Project>

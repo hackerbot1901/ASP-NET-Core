@@ -1,0 +1,46 @@
+﻿@model List<Curso>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="card">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID Curso</th>
+                    <th>Nombre Curso</th>
+                    <th>Descripcion</th>
+                    <th>Duracion</th>
+                    <th>ProfesorID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var curso in Model)
+                {
+                    <tr>
+                        <td>@curso.CursoId</td>
+                        <td>@curso.Nombre</td>
+                        <td>@curso.Descripcion</td>
+                        <td>@curso.DuracionHoras</td>
+                        <td>@curso.ProfesorId</td>
+                        <td>
+                            <a asp-action= "Editar" class="btn btn-primary btn-sm">Editar</a>
+                            <a>Inscribir estudiante</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
