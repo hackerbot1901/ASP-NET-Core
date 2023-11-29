@@ -10,7 +10,7 @@
 
 <div class="card">
     <div class="card-header">
-
+        <a asp-action="Curso" asp-controller="Home" asp-route-idCurso="0">Agregar Curso</a>
     </div>
     <div class="card-body">
         
@@ -21,7 +21,7 @@
                     <th>Nombre Curso</th>
                     <th>Descripcion</th>
                     <th>Duracion</th>
-                    <th>ProfesorID</th>
+                    <th>ID Profesor asignado</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,7 +34,7 @@
                         <td>@curso.DuracionHoras</td>
                         <td>@curso.ProfesorId</td>
                         <td>
-                            <a asp-action= "Editar" class="btn btn-primary btn-sm">Editar</a>
+                            <a asp-action="Curso" asp-controller="Home" asp-route-idCurso=@curso.CursoId class="btn btn-primary btn-sm">Editar</a>
                             <a>Inscribir estudiante</a>
                         </td>
                     </tr>

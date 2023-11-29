@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Giancarlo Naranjo\Desktop\GitHub\ASP-NET-Core\Curso Linea Consumo API\Curso Linea Consumo API
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Giancarlo Naranjo/Desktop/GitHub/ASP-NET-Core/Curso Linea Consumo API/Curso Linea Consumo API/Views/Home/Curso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXJzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Giancarlo Naranjo/Desktop/GitHub/ASP-NET-Core/Curso Linea Consumo API/Curso Linea Consumo API/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

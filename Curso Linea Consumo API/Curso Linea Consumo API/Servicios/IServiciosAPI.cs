@@ -4,9 +4,10 @@ namespace Curso_Linea_Consumo_API.Servicios
 {
     public interface IServiciosAPI
     {
-        //Task<bool> Agregar(Curso curso);
+        Task<bool> Agregar(Curso curso);
         Task<List<Curso>> Listado();
-        //Task<bool> Editar(Curso curso);
+        Task<bool> Editar(Curso curso);
+        Task<Curso> ObtenerCurso(int idCurso);
         //Task<bool> AsignarProfesor(Profesor profesor);
     }
 }

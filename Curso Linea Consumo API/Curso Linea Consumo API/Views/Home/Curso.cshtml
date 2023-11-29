@@ -1,0 +1,38 @@
+﻿@model Curso
+@{
+    ViewData["Title"] = "Agregar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Curso</h1>
+<div class="card">
+    <div class="card-header">
+        @ViewBag.Accion
+    </div>
+    <div class="card-body">
+        <form asp-action="GuardarCambios" asp-controller="Home" method="post">
+            <input asp-for="CursoId" type="hidden" />
+
+            <div class="mb-2">
+                <label class="form-label">Nombre Curso</label>
+                <input type="text" class="form-control form-control-sm" asp-for="Nombre" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Descripcion del curso</label>
+                <input type="text" class="form-control form-control-sm" asp-for="Descripcion" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Duracion del curso</label>
+                <input type="text" class="form-control form-control-sm" asp-for="DuracionHoras" />
+            </div>
+
+            <button type="submit" class="btn btnalert-success btn-sm">Guardar cambios</button>
+
+            <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-sm">Volver a la lista de cursos</a>
+        </form>
+    </div>
+</div>
+
+

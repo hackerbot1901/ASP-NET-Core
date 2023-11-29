@@ -20,11 +20,40 @@ namespace Curso_Linea_Consumo_API.Controllers
             return View(lista);
         }
 
-        public async Task<IActionResult> Curso()
-        {
-            List<Curso> lista = await _servicioApi.Listado();
-            return View(lista);
+        public async Task<IActionResult> Curso(int idCurso)
+        { 
+            Curso curso = new Curso();
+            ViewBag.Accion = "Agregar nuevo curso";
+            if (idCurso != 0)
+            {
+                curso = await _servicioApi.ObtenerCurso(idCurso);
+                ViewBag.Accion = "Editar curso";
+            }
+            return View(curso);
+
         }
+
+        [HttpPost]
+        public async Task<IActionResult> GuardarCambios(Curso curso){
+            bool respuesta ;
+            if(curso.CursoId == 0)
+            {
+                respuesta = await _servicioApi.Agregar(curso);
+            }
+            else
+            {
+                respuesta = await _servicioApi.Editar(curso);
+            }
+            if (respuesta)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
 
         public IActionResult Privacy()
         {
