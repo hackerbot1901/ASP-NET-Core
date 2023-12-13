@@ -15,21 +15,20 @@
 
             <div class="mb-2">
                 <label class="form-label">Nombre Curso</label>
-                <input type="text" class="form-control form-control-sm" asp-for="Nombre" />
+                <input type="text" class="form-control form-control-sm" asp-for="Nombre" required />
             </div>
 
             <div class="mb-2">
                 <label class="form-label">Descripcion del curso</label>
-                <input type="text" class="form-control form-control-sm" asp-for="Descripcion" />
+                <input type="text" class="form-control form-control-sm" asp-for="Descripcion" required />
             </div>
 
             <div class="mb-2">
                 <label class="form-label">Duracion del curso</label>
-                <input type="text" class="form-control form-control-sm" asp-for="DuracionHoras" />
+                <input type="text" class="form-control form-control-sm" asp-for="DuracionHoras" required />
             </div>
 
-            <button type="submit" class="btn btnalert-success btn-sm">Guardar cambios</button>
-
+            <button type="submit" class="btn btn-success btn-sm">Guardar cambios</button>
             <a asp-action="Index" asp-controller="Home" class="btn btn-warning btn-sm">Volver a la lista de cursos</a>
         </form>
     </div>

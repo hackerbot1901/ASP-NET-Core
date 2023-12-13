@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Curso Linea Consumo API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c0b2fb4edfdcdde568d2b1337669b78300f3bdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccbe4d8da30327b68a75462c805540121a83f420")]
 [assembly: System.Reflection.AssemblyProductAttribute("Curso Linea Consumo API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Curso Linea Consumo API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

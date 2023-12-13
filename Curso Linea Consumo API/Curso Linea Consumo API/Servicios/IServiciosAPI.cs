@@ -6,8 +6,11 @@ namespace Curso_Linea_Consumo_API.Servicios
     {
         Task<bool> Agregar(Curso curso);
         Task<List<Curso>> Listado();
+        Task<List<Profesor>> ObtenerProfesores();
+        Task<Profesor> ObtenerProfesor(int idProfesor);
         Task<bool> Editar(Curso curso);
         Task<Curso> ObtenerCurso(int idCurso);
-        //Task<bool> AsignarProfesor(Profesor profesor);
+        Task<bool> AsignarProfesor(int idCurso, Profesor profesor);
+
     }
 }

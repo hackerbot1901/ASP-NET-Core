@@ -1,0 +1,29 @@
+﻿@model Tuple<int, List<Profesor>>
+@{
+    ViewData["Title"] = "Asignar Profesor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Asignar Profesor</h1>
+
+<form asp-action="GuardarAsignacion" asp-controller="Home" method="post">
+    <input type="hidden" name="idCurso" value="@Model.Item1" />
+
+    <div class="mb-2">
+        <label class="form-label">Profesor</label>
+        <select class="form-select form-select-sm" name="ProfesorId">
+            <option value="">Seleccionar profesor</option>
+            @foreach (var profesor in Model.Item2)
+            {
+                <option value="@profesor.ProfesorId">@profesor.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
+
+
+
+
+
